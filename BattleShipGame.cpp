@@ -898,7 +898,10 @@ int main()
         while (scoreOfPlayer1 != 15 && scoreOfPlayer2 != 15)
         {
             // input the guessing of Player1
-            cout << "Player1 turn....." << endl;
+            cout << "*********************************"<<endl;
+            cout << "..........Player1 turn........." << endl;
+            cout << "*********************************"<<endl;
+            printPlayer1Board();
             cout << "Enter the guessed coordinates: " << endl;
             cin >> y1 >> x1;
             int k1 = y1 - 65;
@@ -948,7 +951,10 @@ int main()
                 cout << "*******************************" << endl;
                 break;
             }
-            cout << "Player2 turn......" << endl;
+            cout << "*********************************"<<endl;
+            cout << "..........Player2 turn........." << endl;
+            cout << "*********************************"<<endl;
+            printPlayer2Board();
             cout << "Enter the guessed coordinates: ";
             cin >> y2 >> x2;
             int k2 = y2 - 65;
